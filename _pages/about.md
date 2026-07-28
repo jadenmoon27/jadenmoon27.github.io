@@ -2,33 +2,45 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Computer science at Dartmouth College · Reliable multimodal and medical AI
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Dartmouth College</p>
+    <p>Hanover, New Hampshire</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: false
+  limit: 4
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: false
+  limit: 0
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a computer science student at Dartmouth College working on **reliable machine learning for health**. I study how multimodal and medical AI systems should be evaluated—and designed—when evidence is missing, noisy, shifted, or only weakly aligned with model confidence.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+At Dartmouth's HealthX Lab, advised by Prof. Andrew T. Campbell, I lead research on diagnostics for quality-aware multimodal fusion. My first-author paper, **“When Does Quality-Aware Multimodal Fusion Matter?”**, was accepted to INTERSPEECH 2026. At Mayo Clinic, advised by Prof. Wei Liu, I develop methods for automatic quality assurance of radiotherapy autosegmentation.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My broader goal is to build AI systems whose reliability claims remain meaningful under the conditions that make health data difficult: heterogeneous measurements, missing modalities, distribution shift, limited labels, and asymmetric clinical risk. I plan to pursue a PhD in computer science focused on reliable machine learning, multimodal learning, and AI for medicine.
+
+## Research focus
+
+- Reliability diagnostics, uncertainty, and failure analysis
+- Multimodal learning under missing or degraded evidence
+- Medical imaging and clinically defensible AI evaluation
+- Selective prediction and human-in-the-loop decision support
+
+## Current work
+
+**Reliable multimodal fusion.** I develop leakage-safe tests that ask whether quality signals actually influence a model's decisions, rather than merely correlating with them. [Read more →](/research/)
+
+**Radiotherapy segmentation quality assurance.** I am building patient-level evaluation and verification pipelines for head-and-neck organ-at-risk autosegmentation, with an emphasis on high-sensitivity and clinically defensible model assessment. [Read more →](/research/)
