@@ -30,7 +30,7 @@ I am a computer science student at Dartmouth College working on **reliable machi
 
 At Dartmouth's HealthX Lab, advised by Prof. Andrew T. Campbell, I lead research on diagnostics for quality-aware multimodal fusion. My first-author paper, **“When Does Quality-Aware Multimodal Fusion Matter?”**, was accepted to INTERSPEECH 2026. At Mayo Clinic, advised by Prof. Wei Liu, I develop methods for automatic quality assurance of radiotherapy autosegmentation.
 
-My broader goal is to build AI systems whose reliability claims remain meaningful under the conditions that make health data difficult: heterogeneous measurements, missing modalities, distribution shift, limited labels, and asymmetric clinical risk. I plan to pursue a PhD in computer science focused on reliable machine learning, multimodal learning, and AI for medicine.
+My broader goal is to build AI systems whose reliability claims remain meaningful under the conditions that make health data difficult: heterogeneous measurements, missing modalities, distribution shift, limited labels, and asymmetric clinical risk. I plan to pursue a PhD in computer science focused on reliable machine learning, multimodal learning, and AI for healthcare.
 
 ## Research focus
 
