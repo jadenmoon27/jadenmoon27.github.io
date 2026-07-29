@@ -3,11 +3,14 @@ cv:
   label: Computer Science Researcher
   email: jaden.moon.27@dartmouth.edu
   location: Hanover, New Hampshire
+  address:
+    city: Hanover
+    region: New Hampshire
   image: ""
   summary: >-
-    Dartmouth computer science student studying reliable machine learning for health,
-    with research spanning multimodal sensing, medical imaging, uncertainty, and
-    clinically defensible evaluation.
+    Dartmouth computer science student studying reliable machine learning for
+    health, with research in selective prediction, uncertainty quantification,
+    distribution shift, multimodal health sensing, and medical AI.
 
   social_networks:
     - network: GitHub
@@ -16,6 +19,16 @@ cv:
       username: jmoon85
 
   sections:
+    Academic Interests:
+      - name: Research
+        icon: fa-solid fa-flask
+        keywords:
+          - Reliable machine learning
+          - Selective prediction
+          - Uncertainty quantification
+          - Distribution shift
+          - Multimodal health sensing
+
     Education:
       - institution: Dartmouth College
         location: Hanover, New Hampshire
@@ -23,177 +36,214 @@ cv:
         studyType: B.A.
         start_date: 2023
         end_date: 2027
-        score: "GPA: 3.92 / 4.00"
-        courses: >-
-          Deep Learning; Deep Learning Robustness; Machine Learning; Artificial
-          Intelligence; AI Agents; Software Design & Implementation; Linear Algebra;
-          Differential Equations
+        courses:
+          - Deep Learning
+          - Deep Learning Robustness
+          - Machine Learning
+          - AI Agents
+          - Software Design & Implementation
+          - Linear Algebra
+          - Differential Equations
         highlights:
-          - Expected graduation: June 2027.
+          - "**GPA:** 3.92 / 4.00"
+          - "Expected graduation: June 2027."
 
-    Research Experience:
-      - company: Mayo Clinic Comprehensive Cancer Center
-        position: Summer Undergraduate Research Fellow
-        location: Phoenix, Arizona
-        start_date: 2026-06
-        end_date: 2026-08
-        summary: "Advised by Prof. Wei Liu."
-        highlights:
-          - Developed AI methods for automatic quality assurance of radiotherapy autosegmentation.
-          - Built patient-level data auditing and evaluation pipelines for 3D imaging, predicted masks, and structured quality signals.
-          - Studied high-sensitivity selective prediction and foundation-model-based verification under clinically asymmetric risk.
-          - Public descriptions omit internal data, exact unpublished results, and protected clinical details.
+    Publications:
+      - title: "When Does Quality-Aware Multimodal Fusion Matter? A Leakage-Safe Diagnostic for Decision-Level Dependence"
+        publisher: "INTERSPEECH 2026 — Accepted"
+        releaseDate: 2026
+        url: https://arxiv.org/abs/2606.26473
+        summary: >-
+          Jaden Moon, Arvind Pillai, and Andrew T. Campbell. First author and
+          presenting author.
 
+      - title: "ReliaGate: Reliability Routing for Low-Stakes Wearable Stress Prediction"
+        publisher: "WellComp 2026 (UbiComp/ISWC Workshop) — Under review"
+        releaseDate: 2026
+        summary: >-
+          Jaden Moon, Yvonne Wu, Arvind Pillai, and Andrew T. Campbell. First
+          author.
+
+    Experience:
       - company: HealthX Lab, Dartmouth College
         position: James O. Freedman Presidential Scholar
         location: Hanover, New Hampshire
         start_date: 2025-09
-        end_date: present
-        summary: "Advised by Prof. Andrew T. Campbell."
+        end_date: Present
+        summary: "Advisor: Prof. Andrew T. Campbell"
         highlights:
-          - Led a first-author INTERSPEECH 2026 paper on leakage-safe diagnosis of decision-level reliance on modality-quality signals.
-          - Developed a post-hoc identifiability test that freezes unimodal experts and fusion parameters while breaking quality-instance alignment at inference time.
-          - Built controlled multimodal evaluation pipelines on StressID and CMU-MOSEI using five seeds, five folds, and subject- or video-disjoint splits.
-          - Showed that native quality signals can exhibit near-zero clean-versus-broken gaps despite oracle routing headroom, while positive controls validate the diagnostic when reliability tracks expert correctness.
+          - >-
+            **ReliaGate:** Proposed a post-hoc reliability router combining
+            confidence, signal quality and modality trust, cross-modal agreement,
+            train-standardized atypicality, and train-fitted embedding geometry
+            to surface or withhold unchanged wearable-stress predictions.
+          - >-
+            Evaluated ReliaGate across WESAD, UBFC-Phys, EmpaticaE4Stress, and
+            PhysioNetE4 using subject-disjoint folds, fold-local selection, and
+            paired held-out-subject intervals; on UBFC-Phys, relative to the
+            learned no-geometry routing system, increased coverage by 10.1
+            percentage points and reduced accepted risk by 5.6 percentage points.
+            WESAD analyses showed favorable pooled outcomes could coexist with
+            higher median per-subject accepted risk.
+          - >-
+            **ReliaGate++ (ongoing):** Extending static routing into
+            validation-locked temporal emission control and auditing cue
+            precision, false stress and reassurance, contradiction and flip
+            rates, subject reach, and episode coverage.
+          - >-
+            **INTERSPEECH 2026:** Developed a leakage-safe intervention
+            diagnostic that freezes trained experts and fusion parameters while
+            shuffling quality scores across held-out examples to test
+            decision-level reliance. Across StressID and CMU-MOSEI, 25 runs per
+            dataset showed near-zero native performance changes, while positive
+            controls confirmed sensitivity when reliability tracked correctness.
+
+      - company: Mayo Clinic Comprehensive Cancer Center
+        position: Summer Undergraduate Research Fellow
+        location: Phoenix, Arizona
+        start_date: 2026-06
+        end_date: Present
+        summary: "Advisor: Wei Liu, Ph.D."
+        highlights:
+          - >-
+            Developed a validation-locked selective-review model for quality
+            assurance of AI-generated head-and-neck organ contours using CT,
+            geometric, segmentation uncertainty, and native-plan dose-context
+            evidence; classified 59.4% of 3,812 held-out contour instances as low
+            risk at 99.91% NPV, 97.47% sensitivity, and 0.936 AUROC.
+          - >-
+            Built a patient-disjoint training and evaluation pipeline spanning
+            752 cases, 37,228 contour instances, and 5 folds with nnU-Net and
+            SLURM; added automated checks for split leakage, provenance, and
+            reproducibility.
 
       - company: AIM HIGH Lab, Dartmouth College
         position: Waterhouse Research Award Scholar
         location: Hanover, New Hampshire
         start_date: 2025-02
         end_date: 2025-08
-        summary: "Advised by Prof. Nicholas C. Jacobson."
+        summary: "Advisor: Prof. Nicholas C. Jacobson"
         highlights:
-          - Fine-tuned LLaMA-3.1-8B-Instruct with LoRA and QLoRA for therapeutic-dialogue generation under constrained compute.
-          - Built an evaluation pipeline for 1,753 generated responses using semantic metrics and structured error analysis.
-          - Reduced training cost by 35 percent through 4-bit quantization, enabling broader experimental sweeps.
-          - Designed prompting and inference workflows to improve contextual grounding and reduce off-target generations.
+          - >-
+            Fine-tuned LLaMA-3.1-8B-Instruct with LoRA/QLoRA for
+            therapeutic-dialogue generation and implemented reproducible
+            training and inference workflows under constrained compute.
+          - >-
+            Evaluated 1,753 generated responses using semantic metrics and
+            structured failure analysis to identify contextual grounding and
+            off-target generation errors.
 
-    Publications:
-      - title: "When Does Quality-Aware Multimodal Fusion Matter? A Leakage-Safe Diagnostic for Decision-Level Dependence"
-        authors:
-          - Jaden Moon
-          - Arvind Pillai
-          - Andrew T. Campbell
-        publisher: Proceedings of INTERSPEECH 2026
-        releaseDate: 2026
-        summary: "Accepted. First author and presenting author."
-
-    Course Research:
-      - name: "LDASeg: Latent Diffusion for Ambiguous Medical Image Segmentation"
-        summary: >-
-          Course research manuscript for Dartmouth COSC 89.31/189.31. Contributed
-          evaluation experiments and analysis; the project received a Best Class
-          Project citation.
-        highlights:
-          - Clearly labeled as course research rather than a peer-reviewed publication.
-        start_date: 2026
-        end_date: 2026
-
-    Honors & Awards:
-      - title: Mayo Clinic Summer Undergraduate Research Fellowship
-        authors:
-          - Mayo Clinic
+    Honors and Awards:
+      - title: Mayo Clinic Summer Undergraduate Research Fellowship (SURF)
         date: 2026
         awarder: Mayo Clinic
         summary: "$6,000 competitive summer research fellowship."
 
       - title: Passport AI Grant
-        authors:
-          - GoPassport Education
         date: 2026
         awarder: GoPassport Education
-        summary: "$2,000 external grant supporting the Mayo Clinic research experience."
+        summary: "$2,000 external support for Mayo Clinic SURF."
 
       - title: Best Class Project Citation
-        authors:
-          - Dartmouth College
         date: 2026
-        awarder: Deep Learning Robustness, COSC 89.31
-        summary: "Awarded for the LDASeg course research project."
+        awarder: Deep Learning Robustness (COSC 89.31), Dartmouth College
+        summary: "Winter 2026."
 
       - title: James O. Freedman Presidential Scholar
-        authors:
-          - Dartmouth College
         date: 2025
         awarder: Dartmouth College
         summary: "$3,400 research scholarship."
 
       - title: Waterhouse Research Award
-        authors:
-          - Dartmouth College
         date: 2025
         awarder: Dartmouth College
         summary: "$6,700 summer research grant."
 
       - title: Dean's Honor List
-        authors:
-          - Dartmouth College
-        date: 2023–2026
+        date: "2023–2026"
         awarder: Dartmouth College
         summary: ""
 
-    Selected Projects:
-      - name: BlindClock — Rubric Scoring Infrastructure
-        summary: >-
-          Built reproducible, API-driven LLM evaluation infrastructure for
-          high-throughput rubric scoring and automated assessment workflows.
-        start_date: 2024
-        end_date: present
-
-      - name: Local Mental Health Finder
-        summary: >-
-          Developed a digital-health prototype for symptom-driven provider ranking
-          and therapist search under noisy user inputs.
-        start_date: 2024
-        end_date: 2025
-
-    Leadership & Service:
-      - company: Republic of Korea Marine Corps
-        position: Communications Specialist, Interpreter, and Squad Leader
-        location: Hwaseong, South Korea
-        start_date: 2021-09
-        end_date: 2023-03
-        highlights:
-          - Led a 20-person unit and initiated a peer-support program to identify unspoken distress in a high-stigma environment.
-          - Managed headquarters networking infrastructure and resolved more than 150 technical-support cases per month.
-          - Provided technical interpretation during joint U.S.–ROK exercises.
-
-      - company: Dartmouth Tech Consulting Group
-        position: Developer and Project Lead
-        location: Hanover, New Hampshire
-        start_date: 2024-09
-        end_date: present
-        highlights:
-          - Led web-development and digital-strategy projects for campus organizations under client and timeline constraints.
-
-      - company: Korean Student Association
-        position: Member and Event Organizer
-        location: Hanover, New Hampshire
-        start_date: 2023-09
-        end_date: present
-        highlights:
-          - Organized cultural-exchange events and mentorship programs supporting international students.
-
     Skills:
-      - name: Machine Learning & Evaluation
-        level: ""
+      - name: Methods
         icon: fa-solid fa-chart-line
-        keywords: >-
-          PyTorch, scikit-learn, multimodal learning, statistical modeling,
-          missing-data inference, experimental design
+        keywords:
+          - Selective prediction
+          - Uncertainty estimation and calibration
+          - Distribution-shift evaluation
+          - Multimodal fusion
+          - Time-series modeling
+          - Representation analysis
+          - Subject- and patient-disjoint evaluation
 
-      - name: Programming & Research Infrastructure
-        level: ""
+      - name: ML and Scientific Computing
         icon: fa-solid fa-code
-        keywords: "Python, Git, AWS, Flask, FastAPI"
+        keywords:
+          - Python
+          - PyTorch
+          - scikit-learn
+          - Hugging Face Transformers/PEFT
+          - NumPy
+          - pandas
+          - SciPy
+          - nnU-Net
 
-      - name: Biomedical & Imaging Data
-        level: ""
+      - name: Systems and Reproducibility
+        icon: fa-solid fa-server
+        keywords:
+          - Linux
+          - SLURM
+          - Git
+          - AWS
+          - Flask/FastAPI
+          - Experiment automation
+          - Provenance tracking
+          - Reproducible pipelines
+
+      - name: Signals and Data
         icon: fa-solid fa-heart-pulse
-        keywords: "ECG/EDA preprocessing, DICOM, NIfTI, NeuroKit2, BioSPPy, OpenSMILE"
+        keywords:
+          - PPG/BVP
+          - EDA
+          - ECG
+          - Temperature
+          - OpenSMILE
+          - NeuroKit2
+          - BioSPPy
+          - DICOM
+          - NIfTI
+
+    Projects:
+      - name: Local Mental Health Finder
+        url: https://local-mental-health-find-96e8c.web.app/
+        summary: >-
+          Built and evaluated a full-stack therapist-discovery system using
+          symptom-based search and learning-based provider ranking under sparse,
+          noisy inputs. [Code](https://github.com/mmjsk0805/local-mental-health-finder)
+
+    Leadership and Service:
+      - label: "Republic of Korea Marine Corps (ROKMC) — Sep 2021–Mar 2023"
+        details: >-
+          Communications Specialist & Interpreter (Squad Leader), Hwaseong,
+          South Korea. Led a 20-person unit and initiated “Weekly Hour,” a
+          peer-support program designed to identify unspoken distress in a
+          high-stigma environment. Managed headquarters networking
+          infrastructure, resolved 150+ IT support cases monthly, and provided
+          technical interpretation during joint U.S.–ROK exercises.
+
+      - label: "Dartmouth Tech Consulting Group — Sep 2024–Present"
+        details: >-
+          Led web-development and digital-strategy projects for campus
+          organizations, delivering production systems under client and timeline
+          constraints.
+
+      - label: "Korean Student Association — Sep 2023–Present"
+        details: >-
+          Organized cultural-exchange events and mentorship programs supporting
+          international students.
 
     Languages:
-      - name: English
-        summary: "Native"
       - name: Korean
         summary: "Native"
+      - name: English
+        summary: "Full professional proficiency"

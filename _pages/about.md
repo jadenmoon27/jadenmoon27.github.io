@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Computer science at Dartmouth College · Reliable multimodal and medical AI
+subtitle: Computer science at Dartmouth College · Reliable machine learning for health
 
 profile:
   align: right
@@ -26,21 +26,26 @@ latest_posts:
   limit: 0
 ---
 
-I am a computer science student at Dartmouth College working on **reliable machine learning for health**. I study how multimodal and medical AI systems should be evaluated—and designed—when evidence is missing, noisy, shifted, or only weakly aligned with model confidence.
+I am a computer science student at Dartmouth College working on **reliable machine learning for health**. I study selective prediction, uncertainty quantification, distribution shift, and multimodal health sensing, with an emphasis on evaluation protocols that remain meaningful under noisy or shifted evidence.
 
-At Dartmouth's HealthX Lab, advised by Prof. Andrew T. Campbell, I lead research on diagnostics for quality-aware multimodal fusion. My first-author paper, **“When Does Quality-Aware Multimodal Fusion Matter?”**, was accepted to INTERSPEECH 2026. At Mayo Clinic, advised by Prof. Wei Liu, I develop methods for automatic quality assurance of radiotherapy autosegmentation.
+At Dartmouth's HealthX Lab, advised by Prof. Andrew T. Campbell, I develop reliability-routing and intervention-based diagnostics for wearable and multimodal stress prediction. My first-author paper, **“When Does Quality-Aware Multimodal Fusion Matter?”**, was accepted to INTERSPEECH 2026, and my first-author **ReliaGate** manuscript is under review at WellComp 2026. At Mayo Clinic, advised by Wei Liu, Ph.D., I develop selective-review methods for quality assurance of radiotherapy autosegmentation.
 
 My broader goal is to build AI systems whose reliability claims remain meaningful under the conditions that make health data difficult: heterogeneous measurements, missing modalities, distribution shift, limited labels, and asymmetric clinical risk. I plan to pursue a PhD in computer science focused on reliable machine learning, multimodal learning, and AI for healthcare.
 
 ## Research focus
 
-- Reliability diagnostics, uncertainty, and failure analysis
-- Multimodal learning under missing or degraded evidence
+- Reliable machine learning and selective prediction
+- Uncertainty quantification and calibration
+- Distribution-shift evaluation
+- Multimodal health sensing
 - Medical imaging and clinically defensible AI evaluation
-- Selective prediction and human-in-the-loop decision support
 
 ## Current work
 
-**Reliable multimodal fusion.** I develop leakage-safe tests that ask whether quality signals actually influence a model's decisions, rather than merely correlating with them. [Read more →](/research/)
+**ReliaGate.** I develop a post-hoc reliability router that uses confidence, signal quality and modality trust, cross-modal agreement, train-standardized atypicality, and train-fitted embedding geometry to surface or withhold unchanged wearable-stress predictions. The manuscript is under review at WellComp 2026. [Read more →](/research/)
 
-**Radiotherapy segmentation quality assurance.** I am building patient-level evaluation and verification pipelines for head-and-neck organ-at-risk autosegmentation, with an emphasis on high-sensitivity and clinically defensible model assessment. [Read more →](/research/)
+**ReliaGate++ (ongoing).** I am extending static routing into validation-locked temporal emission control and auditing cue precision, false stress and reassurance, contradiction and flip rates, subject reach, and episode coverage.
+
+**Multimodal reliance diagnostics.** I develop leakage-safe interventions that test whether quality-aware fusion actually uses reliability signals at decision time. [Read more →](/research/)
+
+**Radiotherapy segmentation quality assurance.** I build patient-disjoint selective-review pipelines for head-and-neck organ-at-risk autosegmentation under high-sensitivity clinical constraints. [Read more →](/research/)

@@ -9,11 +9,12 @@ last_name: Moon
 contact_note: >
   The best way to reach me is via my Dartmouth email.
 description: >
-  Computer science researcher working on reliable multimodal learning, medical AI,
-  and rigorous evaluation under missing, noisy, or shifted evidence.
+  Computer science researcher working on reliable machine learning, selective
+  prediction, uncertainty quantification, distribution shift, multimodal health
+  sensing, and clinically defensible medical AI.
 footer_text: >
   Built with Jekyll and the al-folio academic theme.
-keywords: "Jaden Moon, Minjae Moon, reliable machine learning, trustworthy AI, multimodal learning, medical AI, health AI, Dartmouth College, Mayo Clinic"
+keywords: "Jaden Moon, Minjae Moon, reliable machine learning, selective prediction, uncertainty quantification, calibration, distribution shift, multimodal health sensing, medical AI, Dartmouth College, Mayo Clinic"
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 

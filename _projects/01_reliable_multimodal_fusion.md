@@ -13,21 +13,21 @@ Multimodal models often receive quality estimates for audio, video, or physiolog
 
 ## Approach
 
-I developed a leakage-safe, post-hoc identifiability diagnostic that:
+I developed a leakage-safe intervention diagnostic that:
 
-1. freezes trained unimodal experts and fusion parameters;
+1. freezes trained experts and fusion parameters;
 2. preserves the marginal distribution of quality values;
-3. breaks quality–instance alignment only at inference time; and
-4. measures the resulting clean-versus-broken performance gap.
+3. shuffles quality scores across held-out examples; and
+4. measures whether model performance changes.
 
-The evaluation uses repeated, subject- or video-disjoint splits and positive controls designed to verify that the diagnostic responds when reliability genuinely tracks expert correctness.
+The evaluation covers StressID and CMU-MOSEI with 25 runs per dataset and subject- or video-disjoint splits. Positive controls test whether the diagnostic responds when reliability genuinely tracks expert correctness.
 
 ## My contribution
 
-I led the study design, implementation, experimental evaluation, failure analysis, and paper writing as first author.
+I led the study design, implementation, experimental evaluation, failure analysis, and paper writing as first author and presenting author.
 
 ## Outcome
 
-The work was accepted to INTERSPEECH 2026. The central result is diagnostic rather than promotional: native quality signals can leave substantial oracle routing headroom while producing near-zero clean-versus-broken gaps, showing that nominal quality awareness does not necessarily imply decision-level reliance.
+The work was accepted to INTERSPEECH 2026. Native quality signals produced near-zero performance changes, while positive controls confirmed that the diagnostic detects decision-level reliance when informative reliability signals are present. The result distinguishes nominal quality awareness from actual use of quality at inference time.
 
 {% cite moon2026qualityaware %}

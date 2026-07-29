@@ -2,7 +2,7 @@
 layout: page
 title: LDASeg
 description: Latent diffusion for ambiguous medical image segmentation.
-importance: 4
+importance: 5
 category: research
 related_publications: false
 ---
