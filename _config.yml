@@ -16,7 +16,7 @@ footer_text: >
   Built with Jekyll and the al-folio academic theme.
 keywords: "Jaden Moon, Minjae Moon, reliable machine learning, selective prediction, uncertainty quantification, calibration, distribution shift, multimodal health sensing, medical AI, Dartmouth College, Mayo Clinic"
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: jm-favicon.png # the favicon of your site (placed in the root directory)
 
 url: https://jadenmoon27.github.io # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/. Leave blank for root
