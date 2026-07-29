@@ -1,0 +1,3 @@
+{
+  "yaml.disableSchemaDetection": ["_data/cv.yml"]
+}

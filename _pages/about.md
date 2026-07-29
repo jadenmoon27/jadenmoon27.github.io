@@ -2,33 +2,50 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: Computer science at Dartmouth College · Reliable machine learning for health
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image_circular: true
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Dartmouth College</p>
+    <p>Hanover, New Hampshire</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: true
+  scrollable: false
+  limit: 4
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
+  scrollable: false
+  limit: 0
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a computer science student at Dartmouth College working on **reliable machine learning for health**. I study selective prediction, uncertainty quantification, distribution shift, and multimodal health sensing, with an emphasis on evaluation protocols that remain meaningful under noisy or shifted evidence.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+At Dartmouth's HealthX Lab, advised by Prof. Andrew T. Campbell, I develop reliability-routing and intervention-based diagnostics for wearable and multimodal stress prediction. My first-author paper, **“When Does Quality-Aware Multimodal Fusion Matter?”**, was accepted to INTERSPEECH 2026, and my first-author **ReliaGate** manuscript is under review at WellComp 2026. At Mayo Clinic, advised by Wei Liu, Ph.D., I develop selective-review methods for quality assurance of radiotherapy autosegmentation.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My broader goal is to build AI systems whose reliability claims remain meaningful under the conditions that make health data difficult: heterogeneous measurements, missing modalities, distribution shift, limited labels, and asymmetric clinical risk. I plan to pursue a PhD in computer science focused on reliable machine learning, multimodal learning, and AI for healthcare.
+
+## Research focus
+
+- Reliable machine learning and selective prediction
+- Uncertainty quantification and calibration
+- Distribution-shift evaluation
+- Multimodal health sensing
+- Medical imaging and clinically defensible AI evaluation
+
+## Current work
+
+**ReliaGate.** I develop a post-hoc reliability router that uses confidence, signal quality and modality trust, cross-modal agreement, train-standardized atypicality, and train-fitted embedding geometry to surface or withhold unchanged wearable-stress predictions. The manuscript is under review at WellComp 2026. [Read more →](/research/)
+
+**ReliaGate++ (ongoing).** I am extending static routing into validation-locked temporal emission control and auditing cue precision, false stress and reassurance, contradiction and flip rates, subject reach, and episode coverage.
+
+**Multimodal reliance diagnostics.** I develop leakage-safe interventions that test whether quality-aware fusion actually uses reliability signals at decision time. [Read more →](/research/)
+
+**Radiotherapy segmentation quality assurance.** I build patient-disjoint selective-review pipelines for head-and-neck organ-at-risk autosegmentation under high-sensitivity clinical constraints. [Read more →](/research/)
