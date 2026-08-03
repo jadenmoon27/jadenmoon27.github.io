@@ -1,7 +1,7 @@
 <header>
   <nav
     id="navbar"
-    class="navbar navbar-light navbar-expand-sm {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}"
+    class="navbar navbar-light navbar-expand-md {% if site.navbar_fixed %}fixed-top{% else %}sticky-top{% endif %}"
     role="navigation"
   >
     <div class="container">
@@ -99,14 +99,6 @@
               {% endif %}
             {% endif %}
           {% endfor %}
-
-          {% if site.search_enabled %}
-            <li class="nav-item">
-              <button id="search-toggle" title="Search" aria-label="Search site" onclick="openSearchModal()">
-                <span class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></span>
-              </button>
-            </li>
-          {% endif %}
 
           {% if site.enable_darkmode %}
             <li class="toggle-container">

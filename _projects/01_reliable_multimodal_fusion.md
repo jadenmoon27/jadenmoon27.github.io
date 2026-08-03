@@ -22,7 +22,7 @@ tags:
 research_theme: Reliability diagnostics
 home_featured: true
 home_order: 2
-card_size: side
+card_size: standard
 card_index: "02"
 ---
 
