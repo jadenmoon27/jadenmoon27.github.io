@@ -27,12 +27,12 @@ The router is evaluated with subject-disjoint folds, fold-local selection, and p
 
 I evaluated ReliaGate across WESAD, UBFC-Phys, EmpaticaE4Stress, and PhysioNetE4. On UBFC-Phys, relative to the learned no-geometry routing system, ReliaGate increased coverage by 10.1 percentage points while reducing accepted risk by 5.6 percentage points. WESAD analyses showed that favorable pooled outcomes could coexist with higher median per-subject accepted risk.
 
-## ReliaGate++ (ongoing)
+## ReliaGate++ (ongoing follow-on work)
 
 I am extending static routing into validation-locked temporal emission control and auditing cue precision, false stress and reassurance, contradiction and flip rates, subject reach, and episode coverage.
 
 ## Status and contribution
 
-I led the method development, implementation, evaluation, and manuscript writing as first author. The manuscript is **under review at WellComp 2026**, a UbiComp/ISWC workshop.
+I led the method development, implementation, evaluation, and manuscript writing as first author. The paper was **accepted at WellComp 2026**, a UbiComp/ISWC 2026 workshop.
 
 {% cite moon2026reliagate %}

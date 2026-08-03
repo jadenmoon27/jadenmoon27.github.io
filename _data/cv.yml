@@ -58,7 +58,7 @@ cv:
           presenting author.
 
       - title: "ReliaGate: Reliability Routing for Low-Stakes Wearable Stress Prediction"
-        publisher: "WellComp 2026 (UbiComp/ISWC Workshop) — Under review"
+        publisher: "WellComp 2026 (UbiComp/ISWC 2026 Workshop) — Accepted"
         releaseDate: 2026
         summary: >-
           Jaden Moon, Yvonne Wu, Arvind Pillai, and Andrew T. Campbell. First
@@ -73,7 +73,7 @@ cv:
         summary: "Advisor: Prof. Andrew T. Campbell"
         highlights:
           - >-
-            **ReliaGate:** Proposed a post-hoc reliability router combining
+            **ReliaGate (accepted at WellComp 2026):** Developed a post-hoc reliability router combining
             confidence, signal quality and modality trust, cross-modal agreement,
             train-standardized atypicality, and train-fitted embedding geometry
             to surface or withhold unchanged wearable-stress predictions.
@@ -86,7 +86,7 @@ cv:
             WESAD analyses showed favorable pooled outcomes could coexist with
             higher median per-subject accepted risk.
           - >-
-            **ReliaGate++ (ongoing):** Extending static routing into
+            **ReliaGate++ (ongoing follow-on work):** Extending static routing into
             validation-locked temporal emission control and auditing cue
             precision, false stress and reassurance, contradiction and flip
             rates, subject reach, and episode coverage.
