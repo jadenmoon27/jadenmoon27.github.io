@@ -383,3 +383,88 @@ body.fixed-top-nav {
     padding: 24px;
   }
 }
+
+/*******************************************************************************
+ * Contact panel and footer contrast correction
+ ******************************************************************************/
+
+/*
+ * Keep the contact panel navy in both color modes and explicitly override
+ * global heading, paragraph, link, and icon colors.
+ */
+.research-contact-panel,
+html[data-theme="light"] .research-contact-panel,
+html[data-theme="dark"] .research-contact-panel {
+  color: #f8fafc !important;
+  background: #0b1a2a !important;
+}
+
+.research-contact-panel h2 {
+  color: #f8fafc !important;
+}
+
+.research-contact-panel p {
+  color: #cbd5e1 !important;
+  opacity: 1 !important;
+}
+
+/*
+ * jekyll-socials may output both research-contact-icons and contact-icons
+ * wrappers, depending on the rendered context.
+ */
+.research-contact-panel .research-contact-icons,
+.research-contact-panel .contact-icons,
+.research-contact-panel .research-contact-icons a,
+.research-contact-panel .contact-icons a,
+.research-contact-panel .research-contact-icons i,
+.research-contact-panel .contact-icons i,
+.research-contact-panel .research-contact-icons i::before,
+.research-contact-panel .contact-icons i::before {
+  color: #f8fafc !important;
+}
+
+.research-contact-panel .research-contact-icons svg,
+.research-contact-panel .contact-icons svg {
+  color: #f8fafc !important;
+  fill: currentColor;
+}
+
+/* White email button with navy text. */
+.research-contact-panel .research-btn--light {
+  color: #0b1a2a !important;
+  background: #f8fafc !important;
+  border-color: #f8fafc !important;
+  text-decoration: none !important;
+}
+
+.research-contact-panel .research-btn--light:hover,
+.research-contact-panel .research-btn--light:focus-visible {
+  color: #0b1a2a !important;
+  background: #e2e8f0 !important;
+  border-color: #e2e8f0 !important;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.2);
+  transform: translateY(-1px);
+}
+
+/* Ensure the copyright/footer text remains visible on the navy footer. */
+footer,
+footer.sticky-bottom,
+footer.fixed-bottom {
+  color: #cbd5e1 !important;
+  background: #0b1a2a !important;
+}
+
+footer .container,
+footer p,
+footer span {
+  color: #cbd5e1 !important;
+}
+
+footer a {
+  color: #f8fafc !important;
+}
+
+footer a:hover,
+footer a:focus-visible {
+  color: #8bd8d4 !important;
+}
