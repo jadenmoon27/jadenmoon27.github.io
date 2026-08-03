@@ -2,7 +2,7 @@ cv:
   name: Jaden (Minjae) Moon
   label: Computer Science Researcher
   email: jaden.moon.27@dartmouth.edu
-  location: Hanover, New Hampshire
+  location: Hanover, NH
   address:
     city: Hanover
     region: New Hampshire
@@ -19,19 +19,9 @@ cv:
       username: jmoon85
 
   sections:
-    Academic Interests:
-      - name: Research
-        icon: fa-solid fa-flask
-        keywords:
-          - Reliable machine learning
-          - Selective prediction
-          - Uncertainty quantification
-          - Distribution shift
-          - Multimodal health sensing
-
     Education:
       - institution: Dartmouth College
-        location: Hanover, New Hampshire
+        location: Hanover, NH
         area: Computer Science
         studyType: B.A.
         start_date: 2023
@@ -67,7 +57,7 @@ cv:
     Experience:
       - company: HealthX Lab, Dartmouth College
         position: James O. Freedman Presidential Scholar
-        location: Hanover, New Hampshire
+        location: Hanover, NH
         start_date: 2025-09
         end_date: Present
         summary: "Advisor: Prof. Andrew T. Campbell"
@@ -100,7 +90,7 @@ cv:
 
       - company: Mayo Clinic Comprehensive Cancer Center
         position: Summer Undergraduate Research Fellow
-        location: Phoenix, Arizona
+        location: Phoenix, AZ
         start_date: 2026-06
         end_date: Present
         summary: "Advisor: Wei Liu, Ph.D."
@@ -119,7 +109,7 @@ cv:
 
       - company: AIM HIGH Lab, Dartmouth College
         position: Waterhouse Research Award Scholar
-        location: Hanover, New Hampshire
+        location: Hanover, NH
         start_date: 2025-02
         end_date: 2025-08
         summary: "Advisor: Prof. Nicholas C. Jacobson"
