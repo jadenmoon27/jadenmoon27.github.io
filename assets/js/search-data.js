@@ -18,7 +18,7 @@ ninja.data = [{
           },
         },{id: "nav-publications",
           title: "publications",
-          description: "Accepted publications and manuscripts, with status labeled explicitly.",
+          description: "Accepted publications, with status and artifacts labeled explicitly.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -40,6 +40,9 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "news-i-started-the-mayo-clinic-summer-undergraduate-research-fellowship-working-with-prof-wei-liu-on-reliable-ai-for-radiation-oncology",
           title: 'I started the Mayo Clinic Summer Undergraduate Research Fellowship, working with Prof. Wei...',
+          description: "",
+          section: "News",},{id: "news-my-first-author-paper-reliagate-reliability-routing-for-low-stakes-wearable-stress-prediction-was-accepted-to-wellcomp-2026-an-ubicomp-iswc-2026-workshop",
+          title: 'My first-author paper, “ReliaGate: Reliability Routing for Low-Stakes Wearable Stress Prediction,” was accepted...',
           description: "",
           section: "News",},{id: "projects-reliable-multimodal-fusion",
           title: 'Reliable Multimodal Fusion',
