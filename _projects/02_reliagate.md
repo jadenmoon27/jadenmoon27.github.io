@@ -23,7 +23,7 @@ tags:
 research_theme: Selective prediction
 home_featured: true
 home_order: 1
-card_size: featured
+card_size: standard
 card_index: "01"
 follow_on:
   title: ReliaGate++
