@@ -9,125 +9,155 @@ layout: default
       {% endif %}
 
       <h1 id="research-hero-title">{{ page.hero.title }}</h1>
+
+      {% if page.hero.subtitle %}
+        <p class="research-hero__subtitle">{{ page.hero.subtitle }}</p>
+      {% endif %}
+
       <p class="research-hero__lede">{{ page.hero.lede }}</p>
 
-      {% if page.hero.actions %}
-        <div class="research-actions" aria-label="Primary actions">
-          {% for action in page.hero.actions %}
+      {% if page.hero.bio %}
+        <p class="research-hero__bio">{{ page.hero.bio }}</p>
+      {% endif %}
+
+      {% if page.hero.publications %}
+        <div class="research-hero__publications" aria-label="Selected publications">
+          <div class="research-hero__publications-label">Selected publications</div>
+
+          {% for paper in page.hero.publications %}
             <a
-              class="research-btn {% if action.primary %}research-btn--primary{% else %}research-btn--secondary{% endif %}"
-              href="{% if action.url contains '://' or action.url contains 'mailto:' %}{{ action.url }}{% else %}{{ action.url | relative_url }}{% endif %}"
+              class="research-hero__publication"
+              href="{{ paper.url | relative_url }}"
             >
-              {{ action.label }}
-              {% if action.arrow -%}
-                <span aria-hidden="true">→</span>
-              {%- endif %}
+              <span class="research-hero__publication-meta"> {{ paper.status }} · {{ paper.venue }} </span>
+
+              <span class="research-hero__publication-title">
+                {{ paper.title }}
+              </span>
             </a>
           {% endfor %}
         </div>
       {% endif %}
-    </div>
 
-    {% if page.profile and page.profile.image %}
-      <div class="research-hero__portrait-wrap">
-        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-        {% capture profile_sizes %}(min-width: 1120px) 390px, (min-width: 768px) 36vw, 92vw{% endcapture %}
-        {%
-          include figure.liquid
-          loading="eager"
-          path=profile_image_path
-          class="research-hero__portrait"
-          sizes=profile_sizes
-          alt=page.profile.alt
-          cache_bust=true
-        %}
-      </div>
-    {% endif %}
-  </section>
-
-  {% if page.proof_points %}
-    <section class="research-container" aria-label="Research highlights">
-      <div class="research-proof-strip">
-        {% for point in page.proof_points %}
-          <div class="research-proof">
-            <strong>{{ point.value }}</strong>
-            <span>{{ point.label }}</span>
+      {% if page.hero.actions %}
+        {% if page.hero.actions %}
+          <div class="research-actions" aria-label="Primary actions">
+            {% for action in page.hero.actions %}
+              <a
+                class="research-btn {% if action.primary %}research-btn--primary{% else %}research-btn--secondary{% endif %}"
+                href="{% if action.url contains '://' or action.url contains 'mailto:' %}{{ action.url }}{% else %}{{ action.url | relative_url }}{% endif %}"
+              >
+                {{ action.label }}
+                {% if action.arrow -%}
+                  <span aria-hidden="true">→</span>
+                {%- endif %}
+              </a>
+            {% endfor %}
           </div>
-        {% endfor %}
-      </div>
-    </section>
-  {% endif %}
-
-  <section class="research-section">
-    <div class="research-container">
-      <div class="research-section-head">
-        <div>
-          <div class="research-section-kicker">Featured research</div>
-          <h2 class="research-section-title">Methods, evidence, and failure modes.</h2>
-          <p class="research-section-intro">
-            Each project is organized around the question, the evaluation design, and the evidence—not a generic technology list.
-          </p>
-        </div>
-        <a class="research-text-link" href="{{ '/research/' | relative_url }}">All research →</a>
-      </div>
-
-      <div class="research-card-grid">
-        {% assign featured_projects = site.projects | where: 'home_featured', true | sort: 'home_order' %}
-        {% for project in featured_projects %}
-          {% include projects_horizontal.liquid project=project %}
-        {% endfor %}
-
-        {% assign reliagate_project = site.projects | where: 'title', 'ReliaGate' | first %}
-        {% if reliagate_project and reliagate_project.follow_on %}
-          {% include research_follow_on_card.liquid project=reliagate_project %}
         {% endif %}
-      </div>
-    </div>
-  </section>
+        </div>
 
-  {% if page.selected_papers %}
-    <section class="research-section">
-      <div class="research-container">
-        <div class="research-section-head">
-          <div>
-            <div class="research-section-kicker">Selected publications</div>
-            <h2 class="research-section-title">Accepted work.</h2>
+        {% if page.profile and page.profile.image %}
+          <div class="research-hero__portrait-wrap">
+            {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+            {% capture profile_sizes %}(min-width: 1120px) 390px, (min-width: 768px) 36vw, 92vw{% endcapture %}
+            {%
+              include figure.liquid
+              loading="eager"
+              path=profile_image_path
+              class="research-hero__portrait"
+              sizes=profile_sizes
+              alt=page.profile.alt
+              cache_bust=true
+            %}
           </div>
-          <a class="research-text-link" href="{{ '/publications/' | relative_url }}">Full list →</a>
-        </div>
-        <div class="research-publication-surface">
-          {% include selected_papers.liquid %}
-        </div>
-      </div>
-    </section>
-  {% endif %}
-
-  {% if page.announcements and page.announcements.enabled %}
-    <section class="research-section">
-      <div class="research-container">
-        <div class="research-section-head">
-          <div>
-            <div class="research-section-kicker">Updates</div>
-            <h2 class="research-section-title">Recent news.</h2>
-          </div>
-        </div>
-        {% include news_timeline.liquid limit=page.announcements.limit %}
-      </div>
-    </section>
-  {% endif %}
-
-  <section class="research-section">
-    <div class="research-container research-contact-panel">
-      <div>
-        <h2>{{ page.contact.title }}</h2>
-        <p>{{ page.contact.copy }}</p>
-        {% if page.social %}
-          <div class="research-contact-icons">{% social_links %}</div>
         {% endif %}
-      </div>
-      <a class="research-btn research-btn--light" href="mailto:{{ site.data.socials.email }}">
-        {{ site.data.socials.email }}
-      </a>
-    </div>
-  </section>
-</div>
+        </section>
+
+        {% if page.proof_points %}
+          <section class="research-container" aria-label="Research highlights">
+            <div class="research-proof-strip">
+              {% for point in page.proof_points %}
+                <div class="research-proof">
+                  <strong>{{ point.value }}</strong>
+                  <span>{{ point.label }}</span>
+                </div>
+              {% endfor %}
+            </div>
+          </section>
+        {% endif %}
+
+        <section class="research-section">
+          <div class="research-container">
+            <div class="research-section-head">
+              <div>
+                <div class="research-section-kicker">Featured research</div>
+                <h2 class="research-section-title">Methods, evidence, and failure modes.</h2>
+                <p class="research-section-intro">
+                  Each project is organized around the question, the evaluation design, and the evidence—not a generic technology list.
+                </p>
+              </div>
+              <a class="research-text-link" href="{{ '/research/' | relative_url }}">All research →</a>
+            </div>
+
+            <div class="research-card-grid">
+              {% assign featured_projects = site.projects | where: 'home_featured', true | sort: 'home_order' %}
+              {% for project in featured_projects %}
+                {% include projects_horizontal.liquid project=project %}
+              {% endfor %}
+
+              {% assign reliagate_project = site.projects | where: 'title', 'ReliaGate' | first %}
+              {% if reliagate_project and reliagate_project.follow_on %}
+                {% include research_follow_on_card.liquid project=reliagate_project %}
+              {% endif %}
+            </div>
+          </div>
+        </section>
+
+        {% if page.selected_papers %}
+          <section class="research-section">
+            <div class="research-container">
+              <div class="research-section-head">
+                <div>
+                  <div class="research-section-kicker">Selected publications</div>
+                  <h2 class="research-section-title">Accepted work.</h2>
+                </div>
+                <a class="research-text-link" href="{{ '/publications/' | relative_url }}">Full list →</a>
+              </div>
+              <div class="research-publication-surface">
+                {% include selected_papers.liquid %}
+              </div>
+            </div>
+          </section>
+        {% endif %}
+
+        {% if page.announcements and page.announcements.enabled %}
+          <section class="research-section">
+            <div class="research-container">
+              <div class="research-section-head">
+                <div>
+                  <div class="research-section-kicker">Updates</div>
+                  <h2 class="research-section-title">Recent news.</h2>
+                </div>
+              </div>
+              {% include news_timeline.liquid limit=page.announcements.limit %}
+            </div>
+          </section>
+        {% endif %}
+
+        <section class="research-section">
+          <div class="research-container research-contact-panel">
+            <div>
+              <h2>{{ page.contact.title }}</h2>
+              <p>{{ page.contact.copy }}</p>
+              {% if page.social %}
+                <div class="research-contact-icons">{% social_links %}</div>
+              {% endif %}
+            </div>
+            <a class="research-btn research-btn--light" href="mailto:{{ site.data.socials.email }}">
+              {{ site.data.socials.email }}
+            </a>
+          </div>
+        </section>
+        </div>
+      {% endif -%}
