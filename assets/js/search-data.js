@@ -4,21 +4,21 @@ const ninja = document.querySelector('ninja-keys');
 // add the home and posts menu items
 ninja.data = [{
     id: "nav-about",
-    title: "about",
+    title: "About",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-research",
-          title: "research",
-          description: "Selected research on reliable multimodal learning, medical AI, and rigorous evaluation.",
+          title: "Research",
+          description: "Selected research on reliable machine learning for health.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-publications",
-          title: "publications",
-          description: "Accepted publications, with status and artifacts labeled explicitly.",
+          title: "Publications",
+          description: "Accepted work, with status and artifacts labeled explicitly.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
