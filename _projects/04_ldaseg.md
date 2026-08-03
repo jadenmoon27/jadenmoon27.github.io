@@ -5,6 +5,21 @@ description: Latent diffusion for ambiguous medical image segmentation.
 importance: 5
 category: research
 related_publications: false
+status: Course research
+venue: Dartmouth
+status_kind: course
+question: How should a segmentation model represent multiple plausible annotations?
+metrics:
+  - value: Best
+    label: class project citation
+tags:
+  - Medical imaging
+  - Diffusion models
+  - Ambiguity
+research_theme: Earlier work
+home_featured: false
+card_size: standard
+card_index: "06"
 ---
 
 ## Project

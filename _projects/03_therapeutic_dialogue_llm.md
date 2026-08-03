@@ -1,10 +1,28 @@
 ---
 layout: page
 title: Resource-Efficient LLM Adaptation for Therapeutic Dialogue
+card_title: Therapeutic Dialogue Adaptation
 description: Reproducible fine-tuning and structured evaluation under constrained compute.
 importance: 4
 category: research
 related_publications: false
+status: Prior research
+venue: AIM HIGH Lab
+status_kind: prior
+question: How can open language models be adapted and evaluated for therapeutic dialogue under constrained compute?
+metrics:
+  - value: "1,753"
+    label: responses evaluated
+  - value: "4-bit"
+    label: quantization
+tags:
+  - Language models
+  - Evaluation
+  - Reproducibility
+research_theme: Earlier work
+home_featured: false
+card_size: standard
+card_index: "05"
 ---
 
 ## Research question

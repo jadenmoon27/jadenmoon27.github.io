@@ -1,0 +1,43 @@
+{% assign follow_on = include.project.follow_on %}
+{% assign follow_variant = include.variant | default: follow_on.card_size | default: 'standard' %}
+
+<article class="research-card research-card--{{ follow_variant }}">
+  <div class="research-card__top">
+    <span class="research-card__status research-card__status--{{ follow_on.status_kind | default: 'ongoing' }}">
+      {{ follow_on.status }}
+    </span>
+    {% if follow_on.card_index %}
+      <span class="research-card__index">{{ follow_on.card_index }}</span>
+    {% endif %}
+  </div>
+
+  <h3 class="research-card__title">{{ follow_on.title }}</h3>
+  <p class="research-card__question">{{ follow_on.question }}</p>
+
+  {% if follow_on.metrics %}
+    <div class="research-card__metrics">
+      {% for metric in follow_on.metrics %}
+        <span class="research-metric">
+          {% if metric.value -%}
+            <strong>{{ metric.value }}</strong>
+          {%- endif %}
+          {{ metric.label }}
+        </span>
+      {% endfor %}
+    </div>
+  {% endif %}
+
+  <div class="research-card__footer">
+    <div class="research-card__tags">
+      {% for tag in follow_on.tags %}
+        <span class="research-tag">{{ tag }}</span>
+      {% endfor %}
+    </div>
+    <a
+      class="research-text-link"
+      href="{{ include.project.url | relative_url }}#{{ follow_on.anchor }}"
+    >
+      Read follow-on work →
+    </a>
+  </div>
+</article>
