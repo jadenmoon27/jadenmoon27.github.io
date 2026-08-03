@@ -11,29 +11,50 @@ profile:
   alt: Portrait of Jaden Moon
 
 hero:
-  eyebrow: Dartmouth CS · ML for health
-  title: Building AI systems that know when not to answer.
+  eyebrow: Dartmouth College · Computer Science
+  title: Jaden Moon
+  subtitle: Reliable machine learning for health.
   lede: >-
-    I study selective prediction, uncertainty, and distribution shift for
-    multimodal health sensing and medical imaging—especially when evidence is
-    missing, noisy, or misaligned with model confidence.
+    I study when AI systems should answer, defer, or trigger human review,
+    with research in selective prediction, uncertainty quantification,
+    distribution shift, multimodal health sensing, and medical imaging.
+  bio: >-
+    I am a computer science student at Dartmouth College working in the HealthX
+    Lab and a Summer Undergraduate Research Fellow at Mayo Clinic. My
+    first-author work has been accepted at INTERSPEECH 2026 and WellComp 2026.
+
+  publications:
+    - status: Accepted
+      venue: INTERSPEECH 2026
+      title: "When Does Quality-Aware Multimodal Fusion Matter?"
+      url: /publications/#moon2026qualityaware
+
+    - status: Accepted
+      venue: WellComp 2026
+      title: "ReliaGate: Reliability Routing for Low-Stakes Wearable Stress Prediction"
+      url: /publications/#moon2026reliagate
+
   actions:
-    - label: Explore research
+    - label: Research
       url: /research/
       primary: true
       arrow: true
+
     - label: View CV
       url: /cv/
+
     - label: Email
       url: mailto:jaden.moon.27@dartmouth.edu
 
 proof_points:
-  - value: 2 first-author papers
-    label: Accepted at INTERSPEECH and WellComp 2026
+  - value: HealthX Lab
+    label: Dartmouth College · Multimodal reliability
+
+  - value: Mayo Clinic SURF
+    label: Selective review for radiation oncology
+
   - value: 4 public wearable datasets
     label: Subject-disjoint, validation-locked evaluation
-  - value: Mayo Clinic SURF
-    label: Reliable AI for radiation oncology
 
 selected_papers: true
 social: true

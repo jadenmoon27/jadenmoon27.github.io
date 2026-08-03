@@ -9,7 +9,35 @@ layout: default
       {% endif %}
 
       <h1 id="research-hero-title">{{ page.hero.title }}</h1>
+
+      {% if page.hero.subtitle %}
+        <p class="research-hero__subtitle">{{ page.hero.subtitle }}</p>
+      {% endif %}
+
       <p class="research-hero__lede">{{ page.hero.lede }}</p>
+
+      {% if page.hero.bio %}
+        <p class="research-hero__bio">{{ page.hero.bio }}</p>
+      {% endif %}
+
+      {% if page.hero.publications %}
+        <div class="research-hero__publications" aria-label="Selected publications">
+          <div class="research-hero__publications-label">Selected publications</div>
+
+          {% for paper in page.hero.publications %}
+            <a
+              class="research-hero__publication"
+              href="{{ paper.url | relative_url }}"
+            >
+              <span class="research-hero__publication-meta"> {{ paper.status }} · {{ paper.venue }} </span>
+
+              <span class="research-hero__publication-title">
+                {{ paper.title }}
+              </span>
+            </a>
+          {% endfor %}
+        </div>
+      {% endif %}
 
       {% if page.hero.actions %}
         <div class="research-actions" aria-label="Primary actions">
