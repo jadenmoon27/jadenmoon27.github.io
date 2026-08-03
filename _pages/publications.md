@@ -1,14 +1,14 @@
 ---
-layout: page
+layout: publications_index
 permalink: /publications/
-title: publications
-description: Accepted publications, with status and artifacts labeled explicitly.
+title: Publications
+full_width: true
+body_class: research-editorial-publications
 nav: true
 nav_order: 3
+kicker: Publications
+description: Accepted work, with status and artifacts labeled explicitly.
+intro: >-
+  My accepted work is listed below. Ongoing follow-on research and course
+  projects are described separately on the Research page and in my CV.
 ---
-
-My accepted work is listed below. Ongoing follow-on research and course projects are described separately on the [research page](/research/) and in my [CV](/cv/).
-
-<div class="publications">
-{% bibliography %}
-</div>

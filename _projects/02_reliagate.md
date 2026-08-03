@@ -5,6 +5,41 @@ description: Reliability routing for low-stakes wearable stress prediction.
 importance: 2
 category: research
 related_publications: true
+status: Accepted
+venue: WellComp 2026
+status_kind: accepted
+question: When should a wearable stress model surface a prediction—and when should it withhold one?
+metrics:
+  - value: "+10.1 pp"
+    label: coverage
+  - value: "−5.6 pp"
+    label: accepted risk
+  - value: "4"
+    label: public datasets
+tags:
+  - Selective prediction
+  - Wearables
+  - Distribution shift
+research_theme: Selective prediction
+home_featured: true
+home_order: 1
+card_size: featured
+card_index: "01"
+follow_on:
+  title: ReliaGate++
+  status: Ongoing follow-on work
+  status_kind: ongoing
+  question: Extending static routing into validation-locked temporal emission control and episode-level reliability auditing.
+  metrics:
+    - label: Cue precision
+    - label: Subject reach
+    - label: Episode coverage
+  tags:
+    - Time series
+    - Reliability
+  card_size: standard
+  card_index: "04"
+  anchor: reliagate-ongoing-follow-on-work
 ---
 
 ## Research question

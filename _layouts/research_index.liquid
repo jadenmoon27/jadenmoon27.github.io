@@ -1,0 +1,57 @@
+---
+layout: default
+---
+<div class="research-page">
+  <header class="research-container research-page-hero">
+    <div class="research-section-kicker">{{ page.kicker }}</div>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.intro }}</p>
+  </header>
+
+  {% assign selective_projects = site.projects | where: 'research_theme', 'Selective prediction' | sort: 'importance' %}
+  {% assign diagnostic_projects = site.projects | where: 'research_theme', 'Reliability diagnostics' | sort: 'importance' %}
+  {% assign earlier_projects = site.projects | where: 'research_theme', 'Earlier work' | sort: 'importance' %}
+  {% assign reliagate_project = site.projects | where: 'title', 'ReliaGate' | first %}
+
+  <section class="research-container research-theme-block">
+    <div class="research-theme-label">Theme 01</div>
+    <div class="research-theme-content">
+      <h2>Selective prediction</h2>
+      <p>{{ page.selective_intro }}</p>
+      <div class="research-card-grid research-card-grid--uniform">
+        {% for project in selective_projects %}
+          {% include projects_horizontal.liquid project=project variant="standard" %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+
+  <section class="research-container research-theme-block">
+    <div class="research-theme-label">Theme 02</div>
+    <div class="research-theme-content">
+      <h2>Reliability diagnostics</h2>
+      <p>{{ page.diagnostics_intro }}</p>
+      <div class="research-card-grid research-card-grid--uniform">
+        {% for project in diagnostic_projects %}
+          {% include projects_horizontal.liquid project=project variant="standard" %}
+        {% endfor %}
+        {% if reliagate_project and reliagate_project.follow_on %}
+          {% include research_follow_on_card.liquid project=reliagate_project variant="standard" %}
+        {% endif %}
+      </div>
+    </div>
+  </section>
+
+  <section class="research-container research-theme-block">
+    <div class="research-theme-label">Earlier work</div>
+    <div class="research-theme-content">
+      <h2>Methods and systems that shaped the agenda</h2>
+      <p>{{ page.earlier_intro }}</p>
+      <div class="research-card-grid research-card-grid--uniform">
+        {% for project in earlier_projects %}
+          {% include projects_horizontal.liquid project=project variant="standard" %}
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

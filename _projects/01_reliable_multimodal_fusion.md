@@ -1,10 +1,29 @@
 ---
 layout: page
 title: Reliable Multimodal Fusion
+card_title: Multimodal Reliance Diagnostics
 description: Diagnosing whether quality signals actually change multimodal decisions.
 importance: 1
 category: research
 related_publications: true
+status: Accepted
+venue: INTERSPEECH 2026
+status_kind: accepted
+question: Does a quality-aware fusion model actually use its reliability signals at inference time?
+metrics:
+  - value: "25"
+    label: runs / dataset
+  - value: "2"
+    label: multimodal datasets
+tags:
+  - Multimodal ML
+  - Evaluation
+  - Reliability
+research_theme: Reliability diagnostics
+home_featured: true
+home_order: 2
+card_size: side
+card_index: "02"
 ---
 
 ## Research question

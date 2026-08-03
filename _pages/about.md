@@ -1,51 +1,48 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
-subtitle: Computer science at Dartmouth College · Reliable machine learning for health
+full_width: true
+body_class: research-editorial-home
+subtitle: Reliable machine learning for health
 
 profile:
-  align: right
   image: prof_pic.jpg
-  image_circular: true
-  more_info: >
-    <p>Dartmouth College</p>
-    <p>Hanover, New Hampshire</p>
+  alt: Portrait of Jaden Moon
+
+hero:
+  eyebrow: Dartmouth CS · ML for health
+  title: Building AI systems that know when not to answer.
+  lede: >-
+    I study selective prediction, uncertainty, and distribution shift for
+    multimodal health sensing and medical imaging—especially when evidence is
+    missing, noisy, or misaligned with model confidence.
+  actions:
+    - label: Explore research
+      url: /research/
+      primary: true
+      arrow: true
+    - label: View CV
+      url: /cv/
+    - label: Email
+      url: mailto:jaden.moon.27@dartmouth.edu
+
+proof_points:
+  - value: 2 first-author papers
+    label: Accepted at INTERSPEECH and WellComp 2026
+  - value: 4 public wearable datasets
+    label: Subject-disjoint, validation-locked evaluation
+  - value: Mayo Clinic SURF
+    label: Reliable AI for radiation oncology
 
 selected_papers: true
 social: true
 
 announcements:
   enabled: true
-  scrollable: false
   limit: 4
 
-latest_posts:
-  enabled: false
-  scrollable: false
-  limit: 0
+contact:
+  title: Interested in reliable ML for health?
+  copy: The best way to reach me is via my Dartmouth email.
 ---
-
-I am a computer science student at Dartmouth College working on **reliable machine learning for health**. I study selective prediction, uncertainty quantification, distribution shift, and multimodal health sensing, with an emphasis on evaluation protocols that remain meaningful under noisy or shifted evidence.
-
-At Dartmouth's HealthX Lab, advised by Prof. Andrew T. Campbell, I develop reliability-routing and intervention-based diagnostics for wearable and multimodal stress prediction. My first-author paper, **“When Does Quality-Aware Multimodal Fusion Matter?”**, was accepted to INTERSPEECH 2026, and my first-author **ReliaGate** paper was accepted at WellComp 2026. At Mayo Clinic, advised by Wei Liu, Ph.D., I develop selective-review methods for quality assurance of radiotherapy autosegmentation.
-
-My broader goal is to build AI systems whose reliability claims remain meaningful under the conditions that make health data difficult: heterogeneous measurements, missing modalities, distribution shift, limited labels, and asymmetric clinical risk. I plan to pursue a PhD in computer science focused on reliable machine learning, multimodal learning, and AI for healthcare.
-
-## Research focus
-
-- Reliable machine learning and selective prediction
-- Uncertainty quantification and calibration
-- Distribution-shift evaluation
-- Multimodal health sensing
-- Medical imaging and clinically defensible AI evaluation
-
-## Current work
-
-**ReliaGate.** I develop a post-hoc reliability router that uses confidence, signal quality and modality trust, cross-modal agreement, train-standardized atypicality, and train-fitted embedding geometry to surface or withhold unchanged wearable-stress predictions. The paper was accepted at WellComp 2026. [Read more →](/research/)
-
-**ReliaGate++ (ongoing follow-on work).** I am extending static routing into validation-locked temporal emission control and auditing cue precision, false stress and reassurance, contradiction and flip rates, subject reach, and episode coverage.
-
-**Multimodal reliance diagnostics.** I develop leakage-safe interventions that test whether quality-aware fusion actually uses reliability signals at decision time. [Read more →](/research/)
-
-**Radiotherapy segmentation quality assurance.** I build patient-disjoint selective-review pipelines for head-and-neck organ-at-risk autosegmentation under high-sensitivity clinical constraints. [Read more →](/research/)

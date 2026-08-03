@@ -1,10 +1,31 @@
 ---
 layout: page
 title: Radiotherapy Segmentation Quality Assurance
+card_title: Radiotherapy Segmentation QA
 description: Selective review of head-and-neck autosegmentation under asymmetric clinical risk.
 importance: 3
 category: research
 related_publications: false
+status: Ongoing
+venue: Mayo Clinic
+status_kind: ongoing
+question: How can an AI system identify autosegmentations that require human review under asymmetric clinical risk?
+metrics:
+  - value: "59.4%"
+    label: low-risk coverage
+  - value: "99.91%"
+    label: NPV
+  - value: "0.936"
+    label: AUROC
+tags:
+  - Medical imaging
+  - Quality assurance
+  - Calibration
+research_theme: Selective prediction
+home_featured: true
+home_order: 3
+card_size: standard
+card_index: "03"
 ---
 
 ## Research question
