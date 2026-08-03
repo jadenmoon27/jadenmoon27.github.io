@@ -19,9 +19,10 @@ hero:
     with research in selective prediction, uncertainty quantification,
     distribution shift, multimodal health sensing, and medical imaging.
   bio: >-
-    I am a computer science student at Dartmouth College working in the HealthX
-    Lab and a Summer Undergraduate Research Fellow at Mayo Clinic. My
-    first-author work has been accepted at INTERSPEECH 2026 and WellComp 2026.
+    I am a computer science student at Dartmouth College, where I work with
+    Prof. Andrew T. Campbell in the HealthX Lab. At Mayo Clinic, I am a Summer
+    Undergraduate Research Fellow advised by Wei Liu, Ph.D. My first-author
+    work has been accepted at INTERSPEECH 2026 and WellComp 2026.
 
   publications:
     - status: Accepted
@@ -48,10 +49,10 @@ hero:
 
 proof_points:
   - value: HealthX Lab
-    label: Dartmouth College · Multimodal reliability
+    label: Prof. Andrew T. Campbell · Dartmouth College
 
   - value: Mayo Clinic SURF
-    label: Selective review for radiation oncology
+    label: Wei Liu, Ph.D. · Radiation oncology
 
   - value: 4 public wearable datasets
     label: Subject-disjoint, validation-locked evaluation
