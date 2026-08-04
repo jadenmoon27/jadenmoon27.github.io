@@ -20,9 +20,13 @@ hero:
     distribution shift, multimodal health sensing, and medical imaging.
   bio: >-
     I am a computer science student at Dartmouth College, where I work with
-    Prof. Andrew T. Campbell in the HealthX Lab. At Mayo Clinic, I am a Summer
-    Undergraduate Research Fellow advised by Wei Liu, Ph.D. My first-author
-    work has been accepted at INTERSPEECH 2026 and WellComp 2026.
+    <a href="https://www.cs.dartmouth.edu/~campbell/"
+    target="_blank" rel="noopener noreferrer">Prof. Andrew T. Campbell</a>
+    in the HealthX Lab. At Mayo Clinic, I am a Summer Undergraduate Research
+    Fellow advised by
+    <a href="https://www.mayo.edu/research/faculty/liu-wei-ph-d/bio-20035095"
+    target="_blank" rel="noopener noreferrer">Wei Liu, Ph.D.</a>
+    My first-author work has been accepted at INTERSPEECH 2026 and WellComp 2026.
 
   publications:
     - status: Accepted
