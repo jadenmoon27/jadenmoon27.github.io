@@ -70,7 +70,7 @@ max_width: 1040px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true
 serve_schema_org: true
-og_image: assets/img/prof_pic.jpg
+og_image: https://jadenmoon27.github.io/assets/img/prof_pic.jpg
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
