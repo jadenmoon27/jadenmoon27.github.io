@@ -609,3 +609,22 @@ footer a:focus-visible {
     padding: 10px 11px;
   }
 }
+
+/*******************************************************************************
+ * Homepage faculty links
+ ******************************************************************************/
+
+.research-hero__bio a {
+  color: var(--research-accent-strong) !important;
+  font-weight: 650;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--research-accent) 45%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.research-hero__bio a:hover,
+.research-hero__bio a:focus-visible {
+  color: var(--global-text-color) !important;
+  text-decoration-color: var(--research-accent);
+}
