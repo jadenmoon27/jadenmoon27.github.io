@@ -22,11 +22,16 @@ hero:
     I am a computer science student at Dartmouth College, where I work with
     <a href="https://www.cs.dartmouth.edu/~campbell/"
     target="_blank" rel="noopener noreferrer">Prof. Andrew T. Campbell</a>
-    in the HealthX Lab. At Mayo Clinic, I am a Summer Undergraduate Research
-    Fellow advised by
+    in the HealthX Lab. At Mayo Clinic, I am advised by
     <a href="https://www.mayo.edu/research/faculty/liu-wei-ph-d/bio-20035095"
     target="_blank" rel="noopener noreferrer">Wei Liu, Ph.D.</a>
-    My first-author work has been accepted at INTERSPEECH 2026 and WellComp 2026.
+    Earlier, I worked closely with
+    <a href="https://www.nicholasjacobson.com/"
+    target="_blank" rel="noopener noreferrer">Nicholas C. Jacobson, Ph.D.</a>
+    and
+    <a href="https://michaelvheinz.com/"
+    target="_blank" rel="noopener noreferrer">Michael V. Heinz, M.D.</a>
+    on AI for mental health.
 
   publications:
     - status: Accepted
@@ -61,7 +66,7 @@ proof_points:
   - value: 4 public wearable datasets
     label: Subject-disjoint, validation-locked evaluation
 
-selected_papers: true
+selected_papers: false
 social: true
 
 announcements:
