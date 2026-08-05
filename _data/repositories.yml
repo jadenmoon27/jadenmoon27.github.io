@@ -1,14 +1,8 @@
 github_users:
-  - torvalds
-  - alshedivat
+  - jadenmoon27
 
 repo_description_lines_max: 2
 
 github_repos:
-  - alshedivat/al-folio
-  - jekyll/jekyll
-  - twbs/bootstrap
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - mathjax/MathJax
-  - jpswalsh/academicons
+  - jadenmoon27/local-mental-health-finder
+  - jadenmoon27/jadenmoon27.github.io

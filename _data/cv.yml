@@ -14,7 +14,7 @@ cv:
 
   social_networks:
     - network: GitHub
-      username: mmjsk0805
+      username: jadenmoon27
     - network: LinkedIn
       username: jmoon85
 
@@ -209,7 +209,7 @@ cv:
         summary: >-
           Built and evaluated a full-stack therapist-discovery system using
           symptom-based search and learning-based provider ranking under sparse,
-          noisy inputs. [Code](https://github.com/mmjsk0805/local-mental-health-finder)
+          noisy inputs. [Code](https://github.com/jadenmoon27/local-mental-health-finder)
 
     Leadership and Service:
       - label: "Republic of Korea Marine Corps (ROKMC) — Sep 2021–Mar 2023"
