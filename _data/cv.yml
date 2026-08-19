@@ -50,6 +50,7 @@ cv:
       - title: "ReliaGate: Reliability Routing for Low-Stakes Wearable Stress Prediction"
         publisher: "WellComp 2026 (UbiComp/ISWC 2026 Workshop) — Accepted"
         releaseDate: 2026
+        url: https://arxiv.org/abs/2608.15951
         summary: >-
           Jaden Moon, Yvonne Wu, Arvind Pillai, and Andrew T. Campbell. First
           author.

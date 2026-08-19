@@ -70,4 +70,13 @@ I am extending static routing into validation-locked temporal emission control a
 
 I led the method development, implementation, evaluation, and manuscript writing as first author. The paper was **accepted at WellComp 2026**, a UbiComp/ISWC 2026 workshop.
 
+## Paper and reproducibility artifacts
+
+- [arXiv paper](https://arxiv.org/abs/2608.15951)
+- [Authenticated aggregate-only reproduction release](https://github.com/jadenmoon27/reliagate-wellcomp2026)
+
+The public release supports aggregate verification and provenance review. It
+does not redistribute raw wearable signals, participant identifiers,
+per-window predictions, embeddings, or model checkpoints.
+
 {% cite moon2026reliagate %}
