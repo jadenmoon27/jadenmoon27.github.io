@@ -49,4 +49,13 @@ I led the study design, implementation, experimental evaluation, failure analysi
 
 The work was accepted to INTERSPEECH 2026. Native quality signals produced near-zero performance changes, while positive controls confirmed that the diagnostic detects decision-level reliance when informative reliability signals are present. The result distinguishes nominal quality awareness from actual use of quality at inference time.
 
+## Paper and code
+
+- [arXiv paper](https://arxiv.org/abs/2606.26473)
+- [Public reproduction code](https://github.com/jadenmoon27/quality-aware-fusion-diagnostic)
+
+The repository contains a cleaned public implementation of the diagnostic
+pipeline. Restricted datasets, raw source files, embeddings, subject splits,
+and paper-result artifacts are not redistributed.
+
 {% cite moon2026qualityaware %}
