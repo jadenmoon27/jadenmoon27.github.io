@@ -3,18 +3,17 @@
 # -----------------------------------------------------------------------------
 
 title: Jaden Moon
-first_name: Jaden (Minjae)
+first_name: Jaden
 middle_name: ""
 last_name: Moon
 contact_note: >
   The best way to reach me is via my Dartmouth email.
 description: >
-  Computer science researcher working on reliable machine learning, selective
-  prediction, uncertainty quantification, distribution shift, multimodal health
-  sensing, and clinically defensible medical AI.
+  Dartmouth computer science student studying reliable multimodal learning,
+  selective prediction, and evaluation under task and observation shift.
 footer_text: >
   Built with Jekyll and the al-folio academic theme.
-keywords: "Jaden Moon, Minjae Moon, reliable machine learning, selective prediction, uncertainty quantification, calibration, distribution shift, multimodal health sensing, medical AI, Dartmouth College, Mayo Clinic"
+keywords: "Jaden Moon, Minjae Moon, reliable multimodal learning, selective prediction, multimodal machine learning, time-series machine learning, evaluation, wearable health, medical imaging, Dartmouth College"
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: jm-favicon.png # file in assets/img/
 
