@@ -14,7 +14,7 @@ description: Dartmouth computer science student studying reliable multimodal lea
       <h1 id="jm-home-title">Jaden Moon</h1>
       <p class="jm-subtitle">Reliable multimodal learning under changing tasks and observations.</p>
       <p class="jm-lede">
-        I study when machine-learning systems should combine observations, surface predictions, or defer—and whether evaluation protocols support those decisions.
+        I study when machine learning systems should combine observations, surface predictions, or defer, and how to evaluate those decisions rigorously.
       </p>
       <p class="jm-bio">
         I am a Dartmouth CS undergraduate in the HealthX Lab with
