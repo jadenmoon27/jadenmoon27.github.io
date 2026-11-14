@@ -218,3 +218,126 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+/*****************************
+ * Reviewer-friendly academic CV entries
+ *****************************/
+
+.cv .card-title {
+  font-size: 1.65rem;
+  margin-bottom: 1rem;
+}
+
+.cv-entry-list {
+  margin: 0;
+}
+
+.cv-entry {
+  padding: 1.15rem 0;
+}
+
+.cv-entry:first-child {
+  padding-top: 0.2rem;
+}
+
+.cv-entry:last-child {
+  padding-bottom: 0.2rem;
+}
+
+.cv-entry-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.cv-entry-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.cv-entry-title {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.cv-entry-organization {
+  margin-top: 0.2rem;
+  font-size: 0.96rem;
+  line-height: 1.4;
+}
+
+.cv-entry-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.9rem;
+  margin-top: 0.35rem;
+  font-size: 0.84rem;
+  line-height: 1.4;
+  opacity: 0.82;
+}
+
+.cv-entry-meta .iconlocation {
+  margin-right: 0.25rem;
+}
+
+.cv-entry-advisor {
+  font-style: italic;
+}
+
+.cv-date-badge {
+  flex: 0 0 auto;
+  margin-left: 1rem;
+  padding: 0.32rem 0.6rem;
+  color: var(--global-bg-color);
+  background-color: var(--global-theme-color);
+  border-radius: 0.2rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.cv-entry-highlights {
+  margin: 0.75rem 0 0 1rem;
+  padding-left: 0.9rem;
+}
+
+.cv-entry-highlights li {
+  margin-bottom: 0.45rem;
+}
+
+.cv-inline-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.55rem;
+  margin-top: 0.65rem;
+  font-size: 0.9rem;
+}
+
+.cv-inline-separator {
+  opacity: 0.45;
+}
+
+.cv-coursework {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 767.98px) {
+  .cv-entry-header {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .cv-date-badge {
+    order: -1;
+    margin-left: 0;
+  }
+
+  .cv-entry-meta {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+}

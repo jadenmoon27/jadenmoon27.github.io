@@ -1,34 +1,43 @@
-<div class="col mb-4">
-  <a href="{% if project.redirect %}{{ project.redirect }}{% else %}{{ project.url | relative_url }}{% endif %}">
-    <div class="card h-100 hoverable">
-      <div class="row no-gutters">
-        {% if project.img %}
-          <div class="col-md-6">
-            {% include figure.liquid loading="eager" path=project.img sizes="(min-width: 768px) 156px, 50vw" alt="project thumbnail" class="card-img" %}
-          </div>
-        {% endif %}
-        <div class="{% if project.img %}col-md-6{% else %}col-md-12{% endif %}">
-          <div class="card-body">
-            <h3 class="card-title">{{ project.title }}</h3>
-            <p class="card-text">{{ project.description }}</p>
-            <div class="row ml-1 mr-1 p-0">
-              {% if project.github %}
-                <div class="github-icon">
-                  <div class="icon" data-toggle="tooltip" title="Code Repository">
-                    <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-                  </div>
-                  {% if project.github_stars %}
-                    <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                      <i class="fa-solid fa-star"></i>
-                      <span id="{{ project.github_stars }}-stars"></span>
-                    </span>
-                  {% endif %}
-                </div>
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      </div>
+{% assign card_project = include.project | default: project %}
+{% assign card_variant = include.variant | default: card_project.card_size | default: 'standard' %}
+{% assign card_status_kind = card_project.status_kind | default: 'ongoing' %}
+
+<article class="research-card research-card--{{ card_variant }}">
+  <div class="research-card__top">
+    <span class="research-card__status research-card__status--{{ card_status_kind }}">
+      {{ card_project.status -}}
+      {%- if card_project.venue %} · {{ card_project.venue }}{% endif %}
+    </span>
+    {% if card_project.card_index %}
+      <span class="research-card__index">{{ card_project.card_index }}</span>
+    {% endif %}
+  </div>
+
+  <h3 class="research-card__title">{{ card_project.card_title | default: card_project.title }}</h3>
+  <p class="research-card__question">{{ card_project.question | default: card_project.description }}</p>
+
+  {% if card_project.metrics %}
+    <div class="research-card__metrics">
+      {% for metric in card_project.metrics %}
+        <span class="research-metric">
+          {% if metric.value -%}
+            <strong>{{ metric.value }}</strong>
+          {%- endif %}
+          {{ metric.label }}
+        </span>
+      {% endfor %}
     </div>
-  </a>
-</div>
+  {% endif %}
+
+  <div class="research-card__footer">
+    {% if card_project.tags %}
+      <div class="research-card__tags" aria-label="Methods">
+        {% for tag in card_project.tags %}
+          <span class="research-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    <a class="research-text-link" href="{{ card_project.url | relative_url }}">Read project →</a>
+  </div>
+</article>

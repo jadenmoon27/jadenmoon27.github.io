@@ -1,0 +1,21 @@
+<div class="research-timeline">
+  {% if site.news != blank %}
+    {% assign timeline_news = site.news | reverse %}
+    {% assign timeline_limit = include.limit | default: 4 %}
+    {% for item in timeline_news limit: timeline_limit %}
+      <div class="research-timeline__item">
+        <div class="research-timeline__date">{{ item.date | date: '%b %d, %Y' }}</div>
+        <div class="research-timeline__dot" aria-hidden="true"></div>
+        <div class="research-timeline__copy">
+          {% if item.inline %}
+            {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+          {% else %}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
+  {% else %}
+    <p>No news so far.</p>
+  {% endif %}
+</div>

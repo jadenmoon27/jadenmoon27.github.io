@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="research-page publications-page">
+  <header class="research-container research-page-hero">
+    <div class="research-section-kicker">{{ page.kicker }}</div>
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.description }}</p>
+  </header>
+
+  <section class="research-container research-publication-surface research-publication-surface--index">
+    <p class="research-publication-intro">{{ page.intro }}</p>
+    <div class="publications">
+      {% bibliography %}
+    </div>
+  </section>
+</div>
