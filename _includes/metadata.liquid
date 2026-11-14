@@ -14,7 +14,7 @@
   <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
 {% endif %}
 
-{% capture author_name %}{{ site.first_name }}{% if site.middle_name %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
+{% capture author_name %}{{ site.first_name }}{% if site.middle_name != blank %} {{ site.middle_name }}{% endif %} {{ site.last_name }}{% endcapture %}
 
 <!-- Standard metadata -->
 <meta charset="utf-8">
@@ -100,6 +100,8 @@
       {% when 'discord_id' %}
         {% capture link %}https://discord.com/users/{{ social[1] }}{% endcapture %}
         {% assign sameaslinks = sameaslinks | push: link %}
+      {% when 'cv_pdf' %}
+        {% comment %}Document link; exclude from Schema.org sameAs.{% endcomment %}
       {% when 'email' %}
         {% comment %}
           {% capture link %}mailto:{{ social[1] | encode_email }}{% endcapture %}
