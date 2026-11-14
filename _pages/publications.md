@@ -8,6 +8,7 @@ nav: true
 nav_order: 2
 description: Publications and manuscripts, with status and artifacts labeled explicitly.
 ---
+
 <div class="jm-shell jm-page-shell">
   <header class="jm-page-header">
     <p class="jm-eyebrow">Publications</p>
@@ -31,6 +32,7 @@ description: Publications and manuscripts, with status and artifacts labeled exp
       <p><strong>Jaden Moon</strong>, Yu Wu, Arvind Pillai, and Andrew Campbell.</p>
       <p class="jm-links"><a href="https://arxiv.org/abs/2608.15951v1" target="_blank" rel="noopener noreferrer">Paper</a><a href="https://github.com/jadenmoon27/reliagate-wellcomp2026" target="_blank" rel="noopener noreferrer">Code</a></p>
     </article>
+
   </section>
 
   <section class="jm-section" aria-labelledby="nonarchival-title">
@@ -42,6 +44,7 @@ description: Publications and manuscripts, with status and artifacts labeled exp
       <p><strong>Jaden Moon</strong>, Yu Yvonne Wu, and Andrew Campbell.</p>
       <p class="jm-links"><a href="https://openreview.net/forum?id=nfK5CJlXnW" target="_blank" rel="noopener noreferrer">Paper</a></p>
     </article>
+
   </section>
 
   <section class="jm-section" aria-labelledby="under-review-title">
@@ -60,5 +63,6 @@ description: Publications and manuscripts, with status and artifacts labeled exp
       <p><strong>Jaden Moon</strong>, Caiwen Jiang, Songlin Zhao, and Wei Liu.</p>
       <p class="jm-links"><a href="https://arxiv.org/pdf/2611.15255" target="_blank" rel="noopener noreferrer">Paper</a></p>
     </article>
+
   </section>
 </div>

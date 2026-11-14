@@ -8,6 +8,7 @@ nav: true
 nav_order: 1
 description: Research on reliable multimodal and time-series learning, selective prediction, and evaluation under task and observation shift.
 ---
+
 <div class="jm-shell jm-page-shell">
   <header class="jm-page-header">
     <p class="jm-eyebrow">Research</p>
@@ -32,6 +33,7 @@ description: Research on reliable multimodal and time-series learning, selective
       <div class="jm-entry-meta">IEEE ISBI 2027 · Under review</div>
       <div><h3>Interpreting Selective-Review Coverage</h3><p>Separated structural evaluability, endpoint status, and routing decisions in radiotherapy contour quality assurance.</p><p class="jm-links"><a href="https://arxiv.org/pdf/2611.15255" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
     </article>
+
   </section>
 
   <section class="jm-section" aria-labelledby="accepted-work-title">
@@ -51,6 +53,7 @@ description: Research on reliable multimodal and time-series learning, selective
       <div class="jm-entry-meta">NeurIPS 2026 TAE · Non-archival</div>
       <div><h3>GateAudit-TS</h3><p>Built a deterministic pre-test audit for determining whether wearable-health evaluation plans can support their stated claims before held-out-test access.</p><p class="jm-links"><a href="https://openreview.net/forum?id=nfK5CJlXnW" target="_blank" rel="noopener noreferrer">Paper</a></p></div>
     </article>
+
   </section>
 
   <section class="jm-section" aria-labelledby="additional-research-title">
@@ -65,5 +68,6 @@ description: Research on reliable multimodal and time-series learning, selective
       <div class="jm-entry-meta">AIM HIGH Lab · 2025</div>
       <div><h3>Therapeutic-Dialogue Adaptation</h3><p>Formulated a supervised dialogue-completion task and built 4-bit QLoRA training and inference pipelines for LLaMA-3.1-8B-Instruct on AWS SageMaker; compared base and fine-tuned models on 1,753 held-out examples.</p></div>
     </article>
+
   </section>
 </div>

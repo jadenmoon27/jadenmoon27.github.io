@@ -6,6 +6,7 @@ full_width: true
 body_class: jm-minimal-site
 description: Dartmouth computer science student studying reliable multimodal learning, selective prediction, and evaluation under task and observation shift.
 ---
+
 <div class="jm-shell">
   <section class="jm-hero" aria-labelledby="jm-home-title">
     <div class="jm-hero-copy">
@@ -38,6 +39,7 @@ description: Dartmouth computer science student studying reliable multimodal lea
     <div class="jm-portrait-wrap">
       <img class="jm-portrait" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="Portrait of Jaden Moon">
     </div>
+
   </section>
 
   <section class="jm-section" aria-labelledby="selected-work-title">
@@ -72,6 +74,7 @@ description: Dartmouth computer science student studying reliable multimodal lea
         <p class="jm-links"><a href="https://openreview.net/forum?id=nfK5CJlXnW" target="_blank" rel="noopener noreferrer">Paper</a></p>
       </div>
     </article>
+
   </section>
 
   <section class="jm-section" aria-labelledby="current-work-title">
@@ -96,5 +99,6 @@ description: Dartmouth computer science student studying reliable multimodal lea
         <p class="jm-links"><a href="https://arxiv.org/pdf/2611.15370" target="_blank" rel="noopener noreferrer">MedGemma paper</a><a href="https://arxiv.org/pdf/2611.15255" target="_blank" rel="noopener noreferrer">Selective-review paper</a></p>
       </div>
     </article>
+
   </section>
 </div>

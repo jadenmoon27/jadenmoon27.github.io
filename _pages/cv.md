@@ -8,6 +8,7 @@ nav: true
 nav_order: 3
 description: Jaden Moon research CV.
 ---
+
 <div class="jm-shell jm-page-shell">
   <header class="jm-page-header jm-cv-header">
     <p class="jm-eyebrow">Curriculum vitae</p>

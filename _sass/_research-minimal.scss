@@ -116,7 +116,9 @@
     font-size: 0.92rem;
     font-weight: 600;
     text-decoration: none;
-    transition: border-color 120ms ease, background-color 120ms ease;
+    transition:
+      border-color 120ms ease,
+      background-color 120ms ease;
   }
 
   .jm-btn:hover {
@@ -281,7 +283,6 @@
       display: none;
     }
   }
-
 
   /* final minimal refinements */
   .navbar-brand {
