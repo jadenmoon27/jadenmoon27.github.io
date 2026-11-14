@@ -3,29 +3,29 @@ const ninja = document.querySelector('ninja-keys');
 
 // add the home and posts menu items
 ninja.data = [{
-    id: "nav-about",
-    title: "About",
+    id: "nav-home",
+    title: "Home",
     section: "Navigation",
     handler: () => {
       window.location.href = "/";
     },
   },{id: "nav-research",
           title: "Research",
-          description: "Selected research on reliable machine learning for health.",
+          description: "Research on reliable multimodal and time-series learning, selective prediction, and evaluation under task and observation shift.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/research/";
           },
         },{id: "nav-publications",
           title: "Publications",
-          description: "Accepted work, with status and artifacts labeled explicitly.",
+          description: "Publications and manuscripts, with status and artifacts labeled explicitly.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-cv",
           title: "CV",
-          description: "Research CV focused on reliable machine learning, selective prediction, uncertainty quantification, distribution shift, multimodal health sensing, and medical AI.",
+          description: "Jaden Moon research CV.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cv/";
