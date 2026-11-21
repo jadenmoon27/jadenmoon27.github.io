@@ -13,7 +13,7 @@ description: Publications and manuscripts, with status and artifacts labeled exp
   <header class="jm-page-header">
     <p class="jm-eyebrow">Publications</p>
     <h1>Publications and manuscripts</h1>
-    <p>Accepted and under-review work are separated by status, with links to public papers and code.</p>
+    <p>Accepted, under-review, and preprint work are separated by status, with links to public papers, code, and release materials.</p>
   </header>
 
   <section class="jm-section" aria-labelledby="archival-title">
@@ -65,4 +65,17 @@ description: Publications and manuscripts, with status and artifacts labeled exp
     </article>
 
   </section>
+
+  <section class="jm-section" aria-labelledby="preprints-title">
+    <div class="jm-section-heading"><h2 id="preprints-title">Preprints</h2></div>
+
+    <article class="jm-publication">
+      <p class="jm-entry-meta">Preprint · November 2026 · Not peer reviewed</p>
+      <h3>Beyond Arithmetic Averaging: Comparator-Aware Evaluation of Adaptive Routing for Wearable Heart-Rate Estimation</h3>
+      <p><strong>Jaden Moon</strong>, Yu Yvonne Wu, and Andrew T. Campbell.</p>
+      <p class="jm-links"><a href="{{ '/research/beyond-arithmetic-averaging/' | relative_url }}">Project page</a><a href="{{ '/assets/pdf/beyond-arithmetic-averaging-moon-wu-campbell-2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a><a href="{{ '/assets/files/beyond-arithmetic-averaging-source-and-reproducibility.zip' | relative_url }}" download>Source and materials</a></p>
+    </article>
+
+  </section>
+
 </div>
