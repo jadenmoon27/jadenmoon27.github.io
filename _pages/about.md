@@ -92,6 +92,15 @@ description: Dartmouth computer science student studying reliable multimodal lea
     </article>
 
     <article class="jm-entry">
+      <div class="jm-entry-meta">Preprint · November 2026 · Not peer reviewed</div>
+      <div>
+        <h3>Beyond Arithmetic Averaging</h3>
+        <p>Comparator-aware evaluation of adaptive routing against arithmetic averaging, fixed learned fusion, a training-selected policy, and a label-informed oracle.</p>
+        <p class="jm-links"><a href="{{ '/research/beyond-arithmetic-averaging/' | relative_url }}">Project page</a><a href="{{ '/assets/pdf/beyond-arithmetic-averaging-moon-wu-campbell-2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a><a href="{{ '/assets/files/beyond-arithmetic-averaging-source-and-reproducibility.zip' | relative_url }}" download>Source and materials</a></p>
+      </div>
+    </article>
+
+    <article class="jm-entry">
       <div class="jm-entry-meta">Two manuscripts under review · IEEE ISBI 2027</div>
       <div>
         <h3>Radiotherapy contour evaluation</h3>
