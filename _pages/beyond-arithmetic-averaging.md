@@ -15,7 +15,6 @@ description: Preprint on comparator-aware evaluation of adaptive routing for wea
 
     <div class="jm-actions" aria-label="Paper links">
       <a class="jm-btn jm-btn-primary" href="{{ '/assets/pdf/beyond-arithmetic-averaging-moon-wu-campbell-2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a>
-      <a class="jm-btn" href="{{ '/assets/files/beyond-arithmetic-averaging-source-and-reproducibility.zip' | relative_url }}" download>Source and reproducibility materials</a>
     </div>
 
   </header>
@@ -28,14 +27,6 @@ description: Preprint on comparator-aware evaluation of adaptive routing for wea
     <p>
       The audited router improved on averaging, while fixed fusion achieved a slightly larger reduction. The training-selected policy outperformed the audited router in the primary comparison; its advantage over fixed fusion was post hoc and remains exploratory.
     </p>
-  </section>
-
-  <section class="jm-section" aria-labelledby="baa-release-title">
-    <div class="jm-section-heading"><h2 id="baa-release-title">Release scope</h2></div>
-    <p>
-      The companion package supports manuscript compilation, method inspection, and regeneration of the displayed tables and figure from frozen reported values. It does not include the original training or inference implementation, trained model states, participant-level predictions, reference-heart-rate arrays, executable simulation code, or repetition-level simulation records.
-    </p>
-    <p>Current manuscript version: 0.17.</p>
   </section>
 
   <section class="jm-section" aria-labelledby="baa-citation-title">

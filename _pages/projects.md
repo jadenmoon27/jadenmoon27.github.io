@@ -61,7 +61,7 @@ description: Research on reliable multimodal and time-series learning, selective
 
     <article class="jm-entry">
       <div class="jm-entry-meta">Preprint · November 2026 · Not peer reviewed</div>
-      <div><h3>Beyond Arithmetic Averaging</h3><p>Compared arithmetic averaging, fixed learned bilateral fusion, an audited lower-quantile router, a training-selected policy, and a label-informed oracle under participant-disjoint evaluation. The audited router improved on averaging; the selected policy outperformed the router, while its advantage over fixed fusion remained post hoc and exploratory.</p><p class="jm-links"><a href="{{ '/research/beyond-arithmetic-averaging/' | relative_url }}">Project page</a><a href="{{ '/assets/pdf/beyond-arithmetic-averaging-moon-wu-campbell-2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a><a href="{{ '/assets/files/beyond-arithmetic-averaging-source-and-reproducibility.zip' | relative_url }}" download>Source and materials</a></p></div>
+      <div><h3>Beyond Arithmetic Averaging</h3><p>Compared arithmetic averaging, fixed learned bilateral fusion, an audited lower-quantile router, a training-selected policy, and a label-informed oracle under participant-disjoint evaluation. The audited router improved on averaging; the selected policy outperformed the router, while its advantage over fixed fusion remained post hoc and exploratory.</p><p class="jm-links"><a href="{{ '/research/beyond-arithmetic-averaging/' | relative_url }}">Project page</a><a href="{{ '/assets/pdf/beyond-arithmetic-averaging-moon-wu-campbell-2026.pdf' | relative_url }}" target="_blank" rel="noopener noreferrer">PDF</a></p></div>
     </article>
 
     <article class="jm-entry">
